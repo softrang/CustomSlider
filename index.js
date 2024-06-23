@@ -27,17 +27,26 @@ var slideImage=()=>{
  goNext.addEventListener('click', function(){
    
 
+if(counter===12){
+        counter=0
 
-    counter++
-
+    }
+    else{
+        counter++;
+    }
 
    
     slideImage()
 });
 
 goPrev.addEventListener('click', function(){
-    
-        counter--
+    if(counter===0){
+        counter=12
+
+    }
+    else{
+        counter--;
+    }
     slideImage()
 });
 
