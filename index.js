@@ -39,15 +39,17 @@ if(counter===12){
    
     slideImage()
 });
+
 intervalId = setInterval(function() {
-    if (counter === 12) {
+    if (counter===12) {
         counter = 0;
     } else {
         counter++;
     }
 
-    slideImage(); 
-}, 1500);
+    slideImage() 
+}, 3000);
+
 goPrev.addEventListener('click', function(){
     if(counter===0){
         counter=12
